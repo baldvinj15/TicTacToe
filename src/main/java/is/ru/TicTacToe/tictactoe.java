@@ -10,7 +10,12 @@ public class TicTacToe {
 	public static int player2 = 1;
 
 	public static void printGrid() {
-		
+		for (int i = 0;i < 3;i++ ) {
+			for (int j = 0;j < 3;j++ ) {
+				System.out.printGrid[i][j];
+			}
+			System.out.println();
+		}
 	}
 
 	public void resetGrid(){
