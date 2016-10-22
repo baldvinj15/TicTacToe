@@ -7,7 +7,7 @@ public class TicTacToe {
 	public static int COLS = 3;
 	private int[][] grid = new grid[ROWS][COLS];
 
-	public static voud printGrid() {
+	public static void printGrid() {
 		
 	}
 =======
