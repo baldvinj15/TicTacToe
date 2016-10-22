@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class TicTacToeTest {
 
-	private int grid [][];
+	
 
 	
 }
