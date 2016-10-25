@@ -10,5 +10,11 @@ public class TicTacToeTest {
 		assertEquals('O', TicTacToe.togglePlayer());
 	}
 
-	
+	@Test
+	public void testMakeMove() {
+		assertTrue(TicTacToe.makeMove(1));
+	}
+
+
 }
+
