@@ -25,5 +25,15 @@ public class TicTacToeTest {
 		assertTrue(TicTacToe.makeMove(9));
 	}
 
+	@Test
+	public void testMakeMoveTen() {
+		assertFalse(TicTacToe.makeMove(10));
+	}
+
+	@Test
+	public void testMakeMoveZero() {
+		assertFalse(TicTacToe.makeMove(0));
+	}
+
 }
 
