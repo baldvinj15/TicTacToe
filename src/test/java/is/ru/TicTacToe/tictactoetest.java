@@ -35,5 +35,21 @@ public class TicTacToeTest {
 		assertFalse(TicTacToe.makeMove(0));
 	}
 
+	@Test
+	public void testWinnerX() {
+
+		TicTacToe.makeMove(1);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(2);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(4);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(5);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(7);
+		assertEquals('X', TicTacToe.winner());
+	}
+
+
 }
 

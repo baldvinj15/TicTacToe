@@ -27,7 +27,6 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 
 
 	public static boolean makeMove(int input){
-		System.out.print(player + " position: ");
 	    int count = 1;
 	    for(int i = 0; i < SIZE; i++) {
 	    	for(int j = 0; j < SIZE; j++) {
@@ -40,4 +39,25 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    }
 	    return false;
 	}
+
+    public static char winner(){
+    if (board[0][0] == player && board[0][1] == player && board[0][2] == player)
+        return player;
+    if (board[0][0] == player && board[1][0] == player && board[2][0] == player)
+        return player;
+    if (board[0][1] == player && board[1][1] == player && board[2][1] == player)
+        return player;
+    if (board[0][2] == player && board[1][2] == player && board[2][2] == player)
+        return player;
+    if (board[1][0] == player && board[1][1] == player && board[1][2] == player)
+        return player;
+    if (board[2][0] == player && board[2][1] == player && board[2][2] == player)
+        return player;
+    if (board[0][0] == player && board[1][1] == player && board[2][2] == player)
+        return player;
+    if (board[0][2] == player && board[1][1] == player && board[2][0] == player)
+        return player;
+    else
+        return '/';
+    }
 }
