@@ -11,10 +11,19 @@ public class TicTacToeTest {
 	}
 
 	@Test
-	public void testMakeMove() {
+	public void testMakeMoveOne() {
 		assertTrue(TicTacToe.makeMove(1));
 	}
 
+	@Test
+	public void testMakeMoveSix() {
+		assertTrue(TicTacToe.makeMove(6));
+	}
+
+	@Test
+	public void testMakeMoveNine() {
+		assertTrue(TicTacToe.makeMove(9));
+	}
 
 }
 
