@@ -1,13 +1,14 @@
 package is.ru.TicTacToe;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class tictactoetest {
+public class TicTacToeTest {
 
 	@Test
-	public static void printGridTest(){
-		
+	public void testTogglePlayer() {
+		assertEquals('O', TicTacToe.togglePlayer());
 	}
 
+	
 }

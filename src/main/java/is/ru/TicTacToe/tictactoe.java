@@ -1,27 +1,27 @@
 package is.ru.TicTacToe;
 
-public class tictactoe {
-	
-	public static final int ROWS = 3;
-	public static final int COLS = 3;
-	private static int[][] grid = new int[ROWS][COLS];
-	public boolean winner = false;
-	public static int player1 = 0;
-	public static int player2 = 1;
+import java.util.Scanner;
 
+public class TicTacToe {
 
-	public static void printGrid() {
-		for(int i = 0; i < ROWS; i++){
-			System.out.print("| ");
-			for(int j = 0; j < COLS; j++){				
-				System.out.print(grid[i][j] + " | ");
-				
-			}
-			System.out.println();
-			System.out.println("-------------");
-		}
+public static final int SIZE = 3;
+static char player = 'X';
+public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 
-	}
-
-	
+public static void displayboard(){
+    for (int i = 0; i < SIZE; i++){
+    	System.out.print("| ");
+        for (int j = 0; j < SIZE; j++){
+        	System.out.print(board[i][j] + " | ");
+        }
+        System.out.println();
+        System.out.println("-------------");
+    }
+}
+public static char togglePlayer(){
+    if (player == 'X')
+        return player = 'O';
+    else
+        return player = 'X';
+    }
 }
