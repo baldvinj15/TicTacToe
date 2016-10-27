@@ -1,6 +1,7 @@
 package is.ru.TicTacToe;
 
 import java.util.Scanner;
+import edu.princeton.cs.algs4.StdIn;
 
 public class TicTacToe {
 
@@ -86,13 +87,10 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 }
 
     public static void main(String[] args){
-    
-	    int input = 0;
 	    
 	    displayBoard();
 	    while(!isFull()){
-	       Scanner in = new Scanner(System.in);
-	       input = in.nextInt();
+	       int input = StdIn.readInt();
 	       makeMove(input);
 	       displayBoard();
 
