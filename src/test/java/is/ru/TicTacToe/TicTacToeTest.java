@@ -80,6 +80,28 @@ public class TicTacToeTest {
 		TicTacToe.resetBoard();
 	}
 
-
+	@Test
+	public void testIsFull() {
+		TicTacToe.resetBoard();
+		TicTacToe.makeMove(1);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(2);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(3);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(5);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(4);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(7);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(8);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(6);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(9);
+		assertTrue(TicTacToe.isFull());
+		TicTacToe.resetBoard();
+	}
 }
 

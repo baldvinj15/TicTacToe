@@ -76,12 +76,21 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
         return '/';
     }
 
+    public static boolean isFull() {
+    if((board[0][0] == '1') || (board[0][1] == '2') || (board[0][2] == '3') ||
+        (board[1][0] == '4') || (board[1][1] == '5') || (board[1][2] == '6') ||
+        (board[2][0] == '7') || (board[2][1] == '8') || (board[2][2] == '9')) {
+        return false;
+    }
+    return true;
+}
+
     public static void main(String[] args){
     
 	    int input = 0;
 	    
 	    displayBoard();
-	    while(true){
+	    while(!isFull()){
 	       Scanner in = new Scanner(System.in);
 	       input = in.nextInt();
 	       makeMove(input);
@@ -98,8 +107,11 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    	   in.close();
 	           break;
 	       }
-           
+           if(isFull()) {
+            System.out.print("Draw!");
+           }
 	       togglePlayer();
+
 	    }
     
 	}
