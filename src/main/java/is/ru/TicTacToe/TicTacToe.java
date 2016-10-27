@@ -2,7 +2,7 @@ package is.ru.TicTacToe;
 
 import java.util.Scanner;
 
-public class tictactoe {
+public class TicTacToe {
 
 public static final int SIZE = 3;
 static char player = 'X';
