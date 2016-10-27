@@ -3,7 +3,7 @@ package is.ru.TicTacToe;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class TicTacToeTest {
+public class tictactoetest {
 
 
 	@Test
@@ -56,7 +56,7 @@ public class TicTacToeTest {
 		assertEquals('X', TicTacToe.winner());
 		TicTacToe.resetBoard();
 	}
-	
+
 	@Test
 	public void testWinnerO() {
 		TicTacToe.makeMove(2);
