@@ -82,21 +82,24 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    
 	    displayBoard();
 	    while(true){
-	    	Scanner in = new Scanner(System.in);
-	        input = in.nextInt();
-	    makeMove(input);
-	    displayBoard();
-	    if (winner() == 'X'){
-	         System.out.print("Player X has won!");
-	         in.close();
-	        break;
-	    }
-	    if (winner() == 'O'){
-	    	System.out.print("Player O has won!");
-	    	in.close();
-	        break;
-	    }
-	    togglePlayer();
+	       Scanner in = new Scanner(System.in);
+	       input = in.nextInt();
+	       makeMove(input);
+	       displayBoard();
+
+	       if (winner() == 'X'){
+	           System.out.print("Player X has won!");
+	           in.close();
+	           break;
+	           }
+
+	        if (winner() == 'O'){
+	    	   System.out.print("Player O has won!");
+	    	   in.close();
+	           break;
+	       }
+           
+	       togglePlayer();
 	    }
     
 	}
