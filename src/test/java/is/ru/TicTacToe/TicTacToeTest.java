@@ -17,6 +17,12 @@ public class TicTacToeTest {
 	}
 
 	@Test
+	public void testTogglePlayerO() {
+		TicTacToe.togglePlayer();
+		assertEquals('X', TicTacToe.togglePlayer());
+	}
+
+	@Test
 	public void testMakeMoveOne() {
 		assertTrue(TicTacToe.makeMove(1));
 	}
