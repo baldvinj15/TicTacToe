@@ -75,4 +75,27 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
     else
         return '/';
     }
+
+    public static void main(String[] args){
+    
+	    int input = 0;
+	    
+	    displayBoard();
+	    while(true){
+	    	Scanner in = new Scanner(System.in);
+	        input = in.nextInt();
+	    makeMove(input);
+	    displayBoard();
+	    if (winner() == 'X'){
+	         System.out.print("Player X has won!");
+	        break;
+	    }
+	    if (winner() == 'O'){
+	    	System.out.print("Player O has won!");
+	        break;
+	    }
+	    togglePlayer();
+	    }
+    
+	}
 }
