@@ -103,5 +103,19 @@ public class TicTacToeTest {
 		assertTrue(TicTacToe.isFull());
 		TicTacToe.resetBoard();
 	}
+	
+	@Test
+	public void testIsNotFull() {
+		TicTacToe.resetBoard();
+		TicTacToe.makeMove(1);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(2);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(3);
+		TicTacToe.togglePlayer();
+		TicTacToe.makeMove(5);
+		assertFalse(TicTacToe.isFull());
+		TicTacToe.resetBoard();
+	}
 }
 

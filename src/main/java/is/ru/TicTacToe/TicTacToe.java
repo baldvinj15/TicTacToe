@@ -92,7 +92,6 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    displayBoard();
 	    while(!isFull()){
 	       Scanner in = new Scanner(System.in);
-	       if(in.hasNext())
 	       input = in.nextInt();
 	       makeMove(input);
 	       displayBoard();
