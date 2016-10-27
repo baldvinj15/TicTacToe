@@ -29,3 +29,7 @@ dependencies {
     compile files('lib/algs4.jar')
     testCompile 'junit:junit:4.12'
 }
+
+run {
+	standardInput = System.in
+}

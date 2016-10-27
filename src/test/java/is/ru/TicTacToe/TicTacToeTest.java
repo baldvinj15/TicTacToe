@@ -7,7 +7,7 @@ public class TicTacToeTest {
 
 
 	@Test
-	public void	testResetBoard() { 
+	public void testResetBoard() { 
 		assertTrue(TicTacToe.resetBoard());
 	}
 
