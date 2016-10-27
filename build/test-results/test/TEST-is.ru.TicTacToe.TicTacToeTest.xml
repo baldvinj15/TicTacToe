@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.TicTacToe.TicTacToeTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-10-27T14:16:39" hostname="i-1217c9a8.cs1004cloud.internal" time="0.009">
+<testsuite name="is.ru.TicTacToe.TicTacToeTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-10-27T14:34:31" hostname="i-1217c9a8.cs1004cloud.internal" time="0.006">
   <properties/>
   <testcase name="testMakeMoveNine" classname="is.ru.TicTacToe.TicTacToeTest" time="0.002"/>
-  <testcase name="testMakeMoveZero" classname="is.ru.TicTacToe.TicTacToeTest" time="0.001"/>
+  <testcase name="testMakeMoveZero" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
   <testcase name="testTogglePlayerO" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
   <testcase name="testWinnerO" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
-  <testcase name="testWinnerX" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
+  <testcase name="testWinnerX" classname="is.ru.TicTacToe.TicTacToeTest" time="0.001"/>
   <testcase name="testMakeMoveOne" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
   <testcase name="testMakeMoveSix" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
   <testcase name="testMakeMoveTen" classname="is.ru.TicTacToe.TicTacToeTest" time="0.0"/>
