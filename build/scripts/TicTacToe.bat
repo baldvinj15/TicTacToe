@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\TicTacToe.jar;%APP_HOME%\lib\slf4j-api-1.7.21.jar
+set CLASSPATH=%APP_HOME%\lib\TicTacToe.jar;%APP_HOME%\lib\algs4.jar;%APP_HOME%\lib\slf4j-api-1.7.21.jar
 
 @rem Execute TicTacToe
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %TIC_TAC_TOE_OPTS%  -classpath "%CLASSPATH%" is.ru.TicTacToe.TicTacToe %CMD_LINE_ARGS%
