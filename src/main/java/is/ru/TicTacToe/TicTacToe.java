@@ -91,6 +91,10 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    displayBoard();
 	    while(!isFull()){
 	       int input = StdIn.readInt();
+           if(input != '1' || input != '2' || input != '3' || input != '4' || input != '5' || input != '6' || input != '7'
+                   || input != '8' || input != '9') {
+               System.out.print("Please enter a number between 1 and 9");
+               input = StdIn.readInt();
 	       makeMove(input);
 	       displayBoard();
 
