@@ -101,12 +101,12 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	       displayBoard();
 
 	       if (winner() == 'X'){
-	           System.out.print("Player X has won!");
+	           System.out.print("Player X has won");
 	           break;
 	           }
 
 	        if (winner() == 'O'){
-	    	   System.out.print("Player O has won!");
+	    	   System.out.print("Player O has won");
 	           break;
 	       }
            if(isFull()) {
