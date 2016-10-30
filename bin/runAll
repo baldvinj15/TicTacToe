@@ -4,3 +4,6 @@
 ./gradlew compileJava
 ./gradlew test
 ./gradlew jar
+./gradlew fatJar
+./gradlew deployJar
+

@@ -1,4 +1,6 @@
 #!/bin/bash
 
 ./gradlew installDist
-./build/install/TicTacToe/bin/TicTacToe
+./gradlew fatJar
+./gradlew deployJar
+

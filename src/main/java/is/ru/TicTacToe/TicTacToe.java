@@ -16,9 +16,9 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	        	System.out.print(board[i][j] + " | ");
 	        }
 	        System.out.println();
-	        System.out.println("-------------");
-	    }
-	}
+	        System.out.println("-------------");}
+
+	    	}
 
 	public static boolean resetBoard(){
 	board[0][0] = '1';
@@ -90,6 +90,7 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    
 	    displayBoard();
 	    while(!isFull()){
+	       System.out.print("Player " + player + " move:");
 	       int input = StdIn.readInt();
            while(input != 1 && input != 2 && input != 3 && input != 4 && input != 5 && input != 6 && input != 7
         		   && input != 8 && input != 9) {

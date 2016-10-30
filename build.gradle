@@ -1,6 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+defaultTasks 'copyToLib'
+
 mainClassName = "is.ru.TicTacToe.TicTacToe"
 
 repositories {
@@ -16,8 +18,10 @@ dependencies {
 }
 
 
+
 run {
 	standardInput = System.in
+	
 }
 
 jar {
@@ -25,3 +29,17 @@ jar {
 		attributes("Main-Class": "is.ru.TicTacToe.TicTacToe")
 		}
     }
+	
+task deployJar(type: Copy) {
+    into "tmp"
+    from "$buildDir/libs/TicTacToe.jar"
+}
+	
+task fatJar(type: Jar) {
+    baseName = project.name 
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+        manifest {
+		attributes("Main-Class": "is.ru.TicTacToe.TicTacToe")
+		}
+    with jar
+}
