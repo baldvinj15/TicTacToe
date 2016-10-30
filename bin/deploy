@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./gradlew installDist
+./gradlew fatJar
+./gradlew deployJar
+
