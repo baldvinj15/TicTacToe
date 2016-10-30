@@ -1,0 +1,9 @@
+Administration manual
+
+You need to have the Java Runtime Envioroment installed on your computer to run .jar files.
+Download git bash to run the program
+
+Clone the repository to your computer https://github.com/baldvinj15/TicTacToe.git
+Run the bin/deploy
+The .jar file will be generated
+to run the .jar file use the command java -jar tictactoe.jar.
