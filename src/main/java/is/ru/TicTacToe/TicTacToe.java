@@ -41,7 +41,18 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	        return player = 'X';
 	}
 
-
+    public static boolean isDone(int input) {
+	    int count = 1;
+	    for(int i = 0; i < SIZE; i++) {
+	    	for(int j = 0; j < SIZE; j++) {
+	    		if(board[i][j] != 'X' && board[i][j] != 'O'  && count == input) {
+	    			 return false;
+	    		}
+	    		count++;
+	    	}
+	    }
+	    return true;
+    }
 	public static boolean makeMove(int input){
 	    int count = 1;
 	    for(int i = 0; i < SIZE; i++) {
@@ -91,10 +102,18 @@ public static char board[][] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 	    displayBoard();
 	    while(!isFull()){
 	       System.out.print("Player " + player + " move:");
-	       int input = StdIn.readInt();
-           while(input != 1 && input != 2 && input != 3 && input != 4 && input != 5 && input != 6 && input != 7
-        		   && input != 8 && input != 9) {
-               System.out.print("Please enter a number between 1 and 9");
+	       int input = 0;
+	       try {
+	       		input = StdIn.readInt();
+	       	} catch (Exception e) {
+	       		input = 0;
+	       	}
+           while((input != 1 && input != 2 && input != 3 && input != 4 && input != 5 && input != 6 && input != 7
+        		   && input != 8 && input != 9) || isDone(input)) {
+           		if (isDone(input))
+					System.out.println("Already taken");
+           		else
+               		System.out.println("Please enter a number between 1 and 9");
                input = StdIn.readInt();
            }
            makeMove(input);
